@@ -1,0 +1,309 @@
+body,div,p,ul,li,ol,dl,dd,dt,h1,h2,h3,h4,h5,h6,span,i,input,img,a,button,select,table,tr,th,td,label,textarea{
+	padding: 0;
+	margin: 0;
+	-webkit-appearance:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	outline: none;
+	-webkit-overflow-scrolling: touch;
+	word-wrap:break-word;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+	font-weight: normal;
+}
+li{
+	list-style: none
+}
+i{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0 none;
+	vertical-align: top;
+}
+body{
+	background : #eee;
+	font-family: '微软雅黑';
+}
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both;
+}
+
+.box .btn{
+	text-align : center;
+}
+.box{
+	padding: 20px;
+}
+.box button{
+	color: #fff;
+	background : #FE8F0A;
+	margin-bottom : 8px;
+}
+.box p{
+	margin-top : 20px;
+	text-align : center;
+}
+.msg,.msg1{
+	font-size: 14px;
+	color: #FE8F0A;
+}
+.userMsg{
+	text-align: left;
+}
+.userMsg h3{
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #ccc;
+}
+.userMsg h3 i{
+	margin-left: 5px;
+	height: 35px;
+	display: inline-block;
+	font-style: normal;
+	border-bottom: 3px solid #FE8F0A;
+}
+.userMsg div{
+	margin: 8px 0;
+}
+.userMsg div:nth-child(3){
+	font-size: 14px;
+	color: #FE8F0A;
+}
+.userMsg a{
+	float: right;
+}
+.userMsg div a,.userMsg div span{
+	float: left;
+	width : auto;
+}
+.pages,.category,.contentListpg{
+	text-align : center;
+}
+#category td.cz , #contentList td.cz{
+	position : relative;
+	min-width : 180px;
+}
+#category span , #contentList span{
+	position : absolute;
+	left: 100px;
+	display : none;
+	color: #f00;
+}
+.boxs{
+	text-align : center;
+}
+.boxs .jumbotron{
+
+	width : 23%;
+	margin-left : 1%;
+	margin-right : 1%;
+}
+.boxs a{
+	line-height : 70px;
+	font-size : 36px;
+	color: #fff;
+}
+.header{
+	width: 100%;
+}
+.header img{
+	width : 100%;
+}
+.menu{
+	background : #fff;
+	height : 50px;
+	line-height :50px;
+	text-align : center;
+}
+.menu a{
+	margin: 0 20px;
+}
+.menu a.active{
+	color: #00eeff;
+}
+.list{
+	width: 80%;
+	margin: 20px auto;
+}
+.list-l{
+	float: left;
+	width: 68%;
+	margin-right : 2%;
+}
+.list-r{
+	float: right;
+	width : 30%;
+	background : #fff;
+}
+.list-l,.list-r{
+	border-radius: 5px;
+}
+.content_add button{
+	width : 100px;
+}
+.main-box{
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 16px 0 20px;
+	border-radius: 5px;
+}
+.main-box h3{
+	font-size: 28px;
+	padding: 18px 10px;
+	text-align: center;
+}
+ .toolbar{
+	text-align: center;
+	margin-bottom: 6px;
+}
+.s-b{
+	display: inline-block;
+}
+.main-box p{
+	padding: 5px 20px 15px;
+	text-indent: 2em;
+}
+.main-box a.btn{
+	margin-left: 20px;
+}
+.toolbar span{
+	color: #67B1F1;
+	margin-right: 10px;
+}
+.content-msg h3{
+	margin: 50px 0 20px;
+	text-align: center;
+}
+.content-msg{
+	margin-top: 15px;
+	padding: 3% 5%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.content-msg p{
+	text-indent: 2em;
+}
+.toggleBtn{
+	display: none;
+}
+button a {
+	color: #fff;
+}
+button a:hover,button a:visited{
+	color: #fff;
+}
+.content h3{
+	text-align: center;
+}
+.commont-box{
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 18px 18px;
+}
+.commont-box .comTop h3{
+	float: left;
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+.commont-box .comTop span{
+	float: right;
+	margin-top: 18px;
+}
+.commont-box .comTop span i{
+	margin: 0 8px;
+	font-style: italic;
+}
+.commont-box textarea{
+	margin-bottom: 10px;
+	resize: none;
+}
+.return-btn{
+	margin: 30px 0 30px !important;
+}
+.commont-list{
+	margin-bottom: 50px;
+}
+.commont-list li{
+	border-top: 1px solid #ccc;
+}
+.commont-list .commont-msg h4{
+	float: left;
+}.commont-list .commont-msg span{
+	float: right;
+	margin: 10px 10px 10px 0;
+}
+
+@media screen and (max-width: 1000px){
+	.list-r{
+		position: fixed;
+		right: 0;
+		top: 50px;
+		margin-right: 10px;
+		border: 1px solid #eee;
+	}
+	.list-l{
+		width: 100%;
+	}
+	.toggleBtn{
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: -30px;
+		width: 30px;
+		height: 40px;
+		background: #fff;
+		border: 1px solid #eee;
+		border-radius: 5px 0 0 5px;
+		text-align: center;
+		line-height: 40px;
+		text-indent: -8px;
+		cursor: pointer;
+	}
+	.toggleBtn span{
+		display: block;
+		transition: all .5s;
+		transform: rotate(180deg);
+	}
+	.closed span{
+		transform: rotateY(0);
+	}
+}
+
+.pagebar .prevBtn{
+	color: #000;
+}
+.pagebar{
+	text-align: center;
+}
+.pagebar .pagenum{
+	margin: 0 20px;
+}
+.pagebar .nextBtn{
+	color: #000;
+}
+
+.blue{
+	color: #5bc0de;
+}
+
+
+
+
+
+
+
+
+
+

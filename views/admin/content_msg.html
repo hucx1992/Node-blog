@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+
+
+{% block main %}
+<div class="content">
+	<h3>{{list.title}}</h3>
+	<div class="toolbar">
+		<div class="s-b author">作者：<span>{{list.author}}</span></div>
+		<div class="s-b cate">标签：<span>{{list.cate}}</span></div>
+		<div class="s-b time">发表时间：<span>{{list.time}}</span></div>
+		<div class="s-b read">阅读：<span>{{list.read}}</span></div>
+		<div class="s-b commont">评论：<span>{{list.commont.length}}</span></div>
+		<div class="s-b like">点赞：<span>{{list.like}}</span></div>
+	</div>
+	<pre class="content-msg">{{list.content}}</pre>
+</div>
+
+<div class="commont-box clearfix">
+	<div class="comTop clearfix">
+		<h3>添加评论：</h3>
+		<span>一共有<i></i>条评论</span>
+	</div>
+	<textarea class="form-control" rows='5'></textarea>
+	<div class='clearfix' style='margin-bottom: 10px;'>
+		<p class='error-msg' style="float: left; color: #f00;display: none;"></p>
+		<button class="btn btn-primary pull-right">提交</button>
+	</div>
+	<ul class="commont-list">
+		
+	</ul>
+	<div class="pagebar clearfix">
+		<a class='prevBtn' href="##">上一页</a>
+		<span class='pagenum'>1/4</span>
+		<a class='nextBtn' href="##">下一页</a>
+	</div>
+</div>
+
+<a href='/' class="btn btn-default pull-right return-btn">返回首页</a>
+{% endblock %}
+
+{% block footer_js %}
+<script type = 'text/javascript'>
+$(function(){
+	content.addCommont();
+	content.getCommont();
+	content.like();
+})
+</script>
+{% endblock %}
+

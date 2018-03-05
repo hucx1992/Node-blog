@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+
+{% block main %}
+<ol class="breadcrumb">
+	<li><a href="/admin">管理首页</a></li>
+	<li><span>成功提示</span></li>
+</ol>
+
+<div class="panel panel-default">
+	<div class="panel-heading">成功提示</div>
+	<div class="panel-body">{{message}}</div>
+	<div class="panel-footer clearfix">
+		{% if url1 %}
+		<a href = "{{url1}}">继续添加</a>
+		{% endif %}
+		{% if url %}
+		<a style="float: right" href = "{{url}}">点击进入分类列表</a>
+		{% endif %}
+	</div>
+</div>
+
+{% endblock %}
+
+

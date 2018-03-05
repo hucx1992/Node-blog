@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+
+{% block main %}
+<div class="jumbotron">
+    <h1>Hello,{{userInfo.name}}!</h1>
+    <p>欢迎进入我的博客后台管理！</p>
+</div>
+<div class="boxs">
+</div>
+{% endblock %}
+
+{% block footer_js %}
+<script type = 'text/javascript'>
+$(function(){
+    admin_index.list();
+})
+</script>
+{% endblock %}

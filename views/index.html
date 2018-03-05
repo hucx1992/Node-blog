@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hucx 博客</title>
+    <link rel = "stylesheet" href = "public/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "public/css/style.css">
+</head>
+<body>
+<div class="header">
+    <img src = "public/images/1.jpg" alt = "">
+</div>
+
+<nav>
+    <div class="menu">
+    </div>
+</nav>
+
+<div class="list row clearfix">
+
+    <div class="list-r">
+        <div class="toggleBtn"><span>〈</span></div>
+        <div class="box">
+            {% if userInfo._id%}
+            <div class="userMsg clearfix">
+                <h3><i>用户信息</i></h3>
+                <div>{{userInfo.name}}</div>
+                {% if userInfo.isAdmin %}
+                <div class="clearfix">
+                    <span>你好，管理员！</span>
+                    <a href = "/admin">进入管理 </a>
+                </div>
+                {% else %}
+                <div>你好！欢迎光临我的博客。</div>
+                {% endif %}
+                <a class="logout" href="##">退出登录</a>
+            </div>
+            {% else %}
+
+            <div class="loginBox">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">用户名：</label>
+                    <input type="text" name="name" class="form-control u" id="exampleInputEmail1" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail2">密码：</label>
+                    <input type="password" name="name" class="form-control p" id="exampleInputEmail2" placeholder="请输入密码">
+                </div>
+                <div class="btns">
+                    <button class="login btn col-md-12 col-xs-12">登录</button>
+                </div>
+                <p class="msg1"></p>
+                <p>还没注册？<a href = "javascript:void(0)">立即注册</a></p>
+            </div>
+
+            <div class="regBox" style="display: none">
+                <div class="form-group">
+                    <label for="exampleInputEmail2">用户名：</label>
+                    <input type="text" name="name" class="form-control u" id="exampleInputEmail2" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail4">昵称：</label>
+                    <input type="text" name="nicheng" class="form-control nc" id="exampleInputEmail4" placeholder="请输入昵称">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail2">密码：</label>
+                    <input type="password" name="name" class="form-control p" id="exampleInputEmail2" placeholder="请输入密码">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail2">再次输入密码：</label>
+                    <input type="password" name="name" class="form-control ap" id="exampleInputEmail2" placeholder="请再次输入密码">
+                </div>
+                <div class="btns">
+                    <button class="register btn col-md-12 col-xs-12">注册</button>
+                </div>
+                <p class="msg">.</p>
+                <p>已有帐号？<a href = "javascript:void(0)">立即登录</a></p>
+
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+    <div class="list-l">
+    </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="public/js/jquery.min.js"></script>
+<script type="text/javascript" src="public/js/js.js"></script>
+<script type = 'text/javascript'>
+$(function(){
+    index.init();
+})
+</script>
+</body>
+</html>

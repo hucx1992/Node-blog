@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/admin">管理首页</a></li>
+    <li><span></span>用户列表</li>
+</ol>
+<table id="users" class="table table-hover table-striped">
+    <tr class="title">
+        <th>ID</th>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>昵称</th>
+        <th>是否是管理员</th>
+    </tr>
+</table>
+<nav aria-label="Page navigation" class="pages">
+
+</nav>
+{% endblock %}
+
+{% block footer_js %}
+<script type="text/javascript">
+user.init();
+</script>
+{% endblock %}
+
+
